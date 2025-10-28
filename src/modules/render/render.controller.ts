@@ -10,4 +10,9 @@ export class RenderController {
     this.renderService.callBackRender();
     return { message: 'Callback render initiated' };
   }
+  @Get('callbackfromconstructor')
+  callBackRenderFromConstructor() {
+    this.renderService.callBackRenderFromConstructor();
+    return { message: 'Callback render initiated' };
+  }
 }

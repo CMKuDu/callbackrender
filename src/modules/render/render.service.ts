@@ -14,4 +14,14 @@ export class RenderService {
       this.httpService.get(callbackUrl);
     }, TIMECALLBACK);
   }
+  callBackRenderFromConstructor() {
+    const TIMECALLBACK = 60000; // 1 minute in milliseconds
+    const callbackUrl =
+      'https://constructor-api.onrender.com/render/callback';
+
+    setTimeout(() => {
+      this.httpService.get(callbackUrl);
+    }, TIMECALLBACK);
+  }
+  
 }
